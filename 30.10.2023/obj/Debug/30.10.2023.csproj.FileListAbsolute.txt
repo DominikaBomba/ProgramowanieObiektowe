@@ -1,0 +1,8 @@
+C:\Users\student\Desktop\Project_7\30.10.2023\obj\Debug\30.10.2023.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\Project_7\30.10.2023\obj\Debug\30.10.2023.csproj.SuggestedBindingRedirects.cache
+C:\Users\student\Desktop\Project_7\30.10.2023\obj\Debug\30.10.2023.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Project_7\30.10.2023\bin\Debug\30.10.2023.exe.config
+C:\Users\student\Desktop\Project_7\30.10.2023\bin\Debug\30.10.2023.exe
+C:\Users\student\Desktop\Project_7\30.10.2023\bin\Debug\30.10.2023.pdb
+C:\Users\student\Desktop\Project_7\30.10.2023\obj\Debug\30.10.2023.exe
+C:\Users\student\Desktop\Project_7\30.10.2023\obj\Debug\30.10.2023.pdb
