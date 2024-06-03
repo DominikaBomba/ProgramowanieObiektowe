@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\27_05\27_05\obj\Debug\27_05.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\27_05\27_05\obj\Debug\27_05.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\27_05\27_05\bin\Debug\27_05.exe.config
+C:\Users\student\source\repos\27_05\27_05\bin\Debug\27_05.exe
+C:\Users\student\source\repos\27_05\27_05\bin\Debug\27_05.pdb
+C:\Users\student\source\repos\27_05\27_05\obj\Debug\27_05.exe
+C:\Users\student\source\repos\27_05\27_05\obj\Debug\27_05.pdb
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\bin\Debug\27_05.exe.config
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\bin\Debug\27_05.exe
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\bin\Debug\27_05.pdb
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\obj\Debug\27_05.csproj.AssemblyReference.cache
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\obj\Debug\27_05.csproj.CoreCompileInputs.cache
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\obj\Debug\27_05.exe
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\27_05\27_05\obj\Debug\27_05.pdb

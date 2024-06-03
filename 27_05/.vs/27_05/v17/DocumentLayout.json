@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\student\\source\\repos\\27_05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB64725-0048-404D-A23E-B13DF393F8A8}|27_05\\27_05.csproj|c:\\users\\student\\source\\repos\\27_05\\27_05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB64725-0048-404D-A23E-B13DF393F8A8}|27_05\\27_05.csproj|solutionrelative:27_05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EB64725-0048-404D-A23E-B13DF393F8A8}|27_05\\27_05.csproj|c:\\users\\student\\source\\repos\\27_05\\27_05\\classes\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EB64725-0048-404D-A23E-B13DF393F8A8}|27_05\\27_05.csproj|solutionrelative:27_05\\classes\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Machine.cs",
+              "DocumentMoniker": "C:\\Users\\student\\source\\repos\\27_05\\27_05\\classes\\Machine.cs",
+              "RelativeDocumentMoniker": "27_05\\classes\\Machine.cs",
+              "ToolTip": "C:\\Users\\student\\source\\repos\\27_05\\27_05\\classes\\Machine.cs",
+              "RelativeToolTip": "27_05\\classes\\Machine.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAlwC0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T06:16:46.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\student\\source\\repos\\27_05\\27_05\\Program.cs",
+              "RelativeDocumentMoniker": "27_05\\Program.cs",
+              "ToolTip": "C:\\Users\\student\\source\\repos\\27_05\\27_05\\Program.cs",
+              "RelativeToolTip": "27_05\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T06:14:25.042Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
