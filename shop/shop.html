@@ -63,6 +63,7 @@ display: flex;
 			</div>
 		
 		</main>
+		<input type="file">
 		<script>
 			//class item, contains informations about item and list of images
 			//has 'add' method
@@ -179,9 +180,19 @@ for (let element of list) {
 				
 			}
 			let s1 = new Slider(["p0.png", "p1.png", "p2.png", "p3.png"]);
-
+			class Upload{
+				
+				up(){
+					let button = document.createElement("input");
+					button.setAttribute("type", "file");
+					document.querySelector("main").appendChild(button);
+					console.log("aaaa" );
+					let lista = button.childNodes;
+				}
+			}
 			s1.add();
-			
+			let u1 = new Upload();
+			u1.up();
 		
 		</script>
 	</body>
