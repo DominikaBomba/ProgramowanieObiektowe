@@ -1,0 +1,14 @@
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\bin\Debug\bilet_meneger.exe.config
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\bin\Debug\bilet_meneger.exe
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\bin\Debug\bilet_meneger.pdb
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.csproj.AssemblyReference.cache
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.csproj.CoreCompileInputs.cache
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.exe
+C:\Users\Dominika Bomba\Desktop\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.pdb
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\bin\Debug\bilet_meneger.exe.config
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\bin\Debug\bilet_meneger.exe
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\bin\Debug\bilet_meneger.pdb
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.csproj.AssemblyReference.cache
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.csproj.CoreCompileInputs.cache
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.exe
+C:\Users\Dominika Bomba\Desktop\Programowanie obiektowe\PRAKTYKA_moje\bilet_meneger\bilet_meneger\obj\Debug\bilet_meneger.pdb
