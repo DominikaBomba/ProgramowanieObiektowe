@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +18,7 @@ namespace bilet_meneger
             int[,] miejsca_p = new int[20, 20];
             int option = 1;
             List<Uczestnik> uczestnicy = new List<Uczestnik>();
-            ShowMenu(bilety, bilety_t,uczestnicy, miejsca_td, miejsca_tg, miejsca_tg, option);
+            ShowMenu(bilety, bilety_t,uczestnicy, miejsca_p, miejsca_td, miejsca_tg, option);
 
 
             Console.ReadKey();
@@ -73,9 +73,14 @@ namespace bilet_meneger
             Uczestnik nowy_uczestnik = new Uczestnik(nowe_id_u, imie, nazwisko, (short)(DateTime.Now.Year - rok_urodzenia));
             uczestnicy.Add(nowy_uczestnik);
             //dodanie biletu
+            AddPlace(bilety, miejsca, option, nowe_id_b, nowe_id_u);
+          
+        }
+        private static void AddPlace(List<Bilet> bilety, int[,] miejsca, int option, int nowe_id_b, int nowe_id_u)
+        {
+            ShowPlaces(miejsca, option);
             int rzad;
             int kolumna;
-            ShowPlaces(miejsca, option);
             do
             {
                 do
@@ -87,7 +92,7 @@ namespace bilet_meneger
                 {
                     Console.WriteLine("wybierz kolumnę: ");
                 } while (!(int.TryParse(Console.ReadLine(), out kolumna)) || kolumna < 0 || rzad > miejsca.GetLength(1));
-                if(miejsca[rzad - 1, kolumna - 1] != 0)
+                if (miejsca[rzad - 1, kolumna - 1] != 0)
                 {
                     Console.WriteLine("!!! Miejsce zajęte !!!");
                 }
@@ -160,7 +165,80 @@ namespace bilet_meneger
                 Console.WriteLine("");
             }
         }
-        private static void ShowMenu(List<Bilet> bilety, List<Bilet_trybuna> bilet_t, List<Uczestnik> uczestnicy, int[,] miejsca_td, int[,] miejsca_tg, int[,] miejsca_p, int option)
+        private static void ChangePlace(List<Bilet> bilety, List<Bilet_trybuna> bilet_t, List<Uczestnik> uczestnicy, int[,] miejsca_td, int[,] miejsca_tg, int[,] miejsca_p)
+        {
+            Console.WriteLine("--- Zmiana miejsca --- ");
+            
+            int id_uczestnika = 0;
+            do
+            {
+                Console.WriteLine("Podaj nazwisko uczestnika: ");
+                string nazwisko = Console.ReadLine();
+
+                foreach (Uczestnik u in uczestnicy)
+                {
+                    if (u.Nazwisko == nazwisko)
+                    {
+                        Console.WriteLine(u.Informacje());
+                        id_uczestnika = u.Id;
+                        foreach (Bilet b in bilety)
+                        {
+                            if (b.Id_uczestnika == id_uczestnika)
+                            {
+                                Console.WriteLine(b.Informacje());
+                                //usuwanie obecnego miejsca 
+                                if(b.Miejsce == miejsce.plyta)
+                                {
+                                    miejsca_p[b.Rzad - 1, b.Kolumna - 1] = 0;
+
+                                }
+                                else if (b.Miejsce == miejsce.trybuna_dolna)
+                                {
+                                    miejsca_td[b.Rzad - 1, b.Kolumna - 1] = 0;
+
+                                }
+                                else
+                                {
+                                    miejsca_tg[b.Rzad - 1, b.Kolumna - 1] = 0;
+                                }
+                                bilety.Remove(b);
+                                int option;
+                                do
+                                {
+                                    Console.WriteLine("Wybierz sektor: \n 1. Plyta \n 2. Trybuna Dolna \n 3. Trybuna Górna");
+                                } while (!(int.TryParse(Console.ReadLine(), out option)) || option < 1 || option > 3);
+
+                                if (option == 1) //jeśli płyta inicjujemy obiekt klasy Bilet
+                                {
+                                    Dodaj2(bilety, bilet_t, uczestnicy, miejsca_p, option);
+
+                                }
+                                else if (option == 2)
+                                {
+                                    Dodaj2(bilety, bilet_t, uczestnicy, miejsca_td, option);
+                                }
+                                else
+                                {
+                                    Dodaj2(bilety, bilet_t, uczestnicy, miejsca_tg, option);
+                                }
+
+                              
+                            }
+                        }
+
+
+                    }
+
+                }
+                if (id_uczestnika == 0)
+                {
+                    Console.WriteLine($"Nie znaleziono uczestnika {nazwisko}");
+                }
+            }
+            while (id_uczestnika == 0);
+
+        }
+        private static void ShowMenu(List<Bilet> bilety, List<Bilet_trybuna> bilet_t, List<Uczestnik> uczestnicy, int[,] miejsca_p, int[,] miejsca_td, int[,] miejsca_tg, int option)
         {
             do
             {
@@ -169,7 +247,8 @@ namespace bilet_meneger
                 Console.WriteLine("1. Dodawanie uczestnika wydarzenia");
                 Console.WriteLine("2. Wyszukiwanie uczestnika");
                 Console.WriteLine("3. Wyświetlanie stanu miejsc (zajęte/ niezajęte)");
-                Console.WriteLine("4. Zakończ program");
+                Console.WriteLine("4.Zmiana miejsca uczestnika");
+                Console.WriteLine("5. Zakończ program");
                 switch (Console.ReadLine())
                 {
                     case "1":
@@ -184,11 +263,11 @@ namespace bilet_meneger
                         {
                             Console.WriteLine("Wybierz sektor: \n 1. Plyta \n 2. Trybuna Dolna \n 3. Trybuna Górna");
                         } while (!(int.TryParse(Console.ReadLine(), out option)) || option < 1 || option > 3);
-                        if(option == 0)
+                        if(option == 1)
                         {
                             ShowPlaces(miejsca_p, 1);
                         }
-                        else if (option == 1)
+                        else if (option == 2)
                         {
                             ShowPlaces(miejsca_td, 2);
                         }
@@ -197,7 +276,9 @@ namespace bilet_meneger
                             ShowPlaces(miejsca_tg, 3);
                         }
                         break;
-
+                    case "4":
+                        ChangePlace(bilety, bilet_t, uczestnicy, miejsca_td, miejsca_tg, miejsca_p);
+                        break;
 
                 }
                 Console.ReadKey();
